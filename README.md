@@ -4,7 +4,7 @@
  - Copyright 2012: Joe Giuffrida, http://www.josephgiuffrida.com
  - Dual licensed under the MIT or GPL Version 2 licenses. 
 
-The goal of this script is provide a simple script to enable the placeholder attribute in browsers without native support
+The goal of this script is provide a simple method of enabling the placeholder attribute in browsers without native support
 
 Usage Instructions
 ======
