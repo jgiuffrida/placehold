@@ -4,12 +4,12 @@
  - Copyright 2012: Joe Giuffrida, http://www.josephgiuffrida.com
  - Dual licensed under the MIT or GPL Version 2 licenses. 
 
-The goal of this script is provide a simple method of enabling the placeholder attribute in browsers without native support
+The goal of this script is provide a simple method of enabling the placeholder attribute in browsers without native support. 
 
 Usage Instructions
 ======
 
-1. Include jQuery and placehold.jquery.ugly.js on page
+1. Include jQuery (jQuery version 1.7+ required) and placehold.jquery.ugly.js on page
 2. $('input').placehold();
 3. See your glorious placeholders working in some not so glorious browsers.
 

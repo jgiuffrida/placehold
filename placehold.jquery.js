@@ -10,28 +10,26 @@
 		return this.each(function() {
 			if(!nativeSupport) {
 				var $this = $(this),
-					$wrapper = $('<span />'),
-					$cover = $('<span />').text($this.attr('placeholder')),
+					$wrapper = $('<span />').addClass('placeholder-wrapper').css('position','relative'),
+					$cover = $('<span />').text($this.attr('placeholder')).css({'position':'absolute','top':'0','left':'0','z-index':1}),
 					that = this,
 					val = $this.attr('value');
 					
-				$wrapper.addClass('placeholder').css('position','relative');
-				$cover.css({'position':'absolute','top':'0','left':'0','z-index':1});
 				$this.wrap($wrapper);
 				$this.parent().append($cover);
 
 
-				$cover.on('click', function() {
+				$cover.click(function() {
 					$this.focus();
 				});
 
-				$this.on('blur',function() {
+				$this.blur(function() {
 					if(!val) {
 						$cover.show();
 					}	
 				});
 
-				$this.on('focus',function() {
+				$this.focus(function() {
 					$cover.hide();
 				});
 
