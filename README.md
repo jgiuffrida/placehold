@@ -9,7 +9,7 @@ The goal of this script is provide a simple method of enabling the placeholder a
 Usage Instructions
 ======
 
-1. Include jQuery (jQuery version 1.7+ required) and placehold.jquery.ugly.js on page
+1. Include jQuery and placehold.jquery.ugly.js on page
 2. $('input').placehold();
 3. See your glorious placeholders working in some not so glorious browsers.
 
