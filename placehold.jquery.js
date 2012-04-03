@@ -11,10 +11,12 @@
 			if(!nativeSupport) {
 				var $this = $(this),
 					$wrapper = $('<span />').addClass('placeholder-wrapper').css('position','relative'),
-					$cover = $('<span />').text($this.attr('placeholder')).css({'position':'absolute','top':'0','left':'0','z-index':1}),
+					$cover = $('<span />').css({'position':'absolute','top':'0','left':'0','z-index':1}),
 					that = this,
 					val = $this.attr('value');
 					
+				$cover.text($this.attr('placeholder'));
+
 				$this.wrap($wrapper);
 				$this.parent().append($cover);
 
